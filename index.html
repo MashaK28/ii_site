@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description" content="Душевные вопросы — бережный способ стать ближе. Выбирайте тему и задавайте друг другу вопросы.">
+    <title>Душевные вопросы — разговоры, которые сближают</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231a1715'/%3E%3Cpath d='M20 29s-10-6.2-10-13a5.5 5.5 0 0 1 10-3.1A5.5 5.5 0 0 1 30 16c0 6.8-10 13-10 13Z' fill='none' stroke='%23d2ad8d' stroke-width='1.5'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="./" aria-label="Душевные вопросы — на главную">
+          <span class="wordmark-mark" aria-hidden="true">д.</span>
+          <span>душевные вопросы</span>
+        </a>
+        <span class="header-note"><span class="status-dot" aria-hidden="true"></span> пространство для разговора</span>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Не спешите. Будьте рядом.</p>
+        <h1 id="page-title">Разговоры,<br>которые <em>сближают.</em></h1>
+        <p class="intro-copy">Иногда достаточно одного хорошего вопроса,<br class="desktop-break"> чтобы узнать друг друга по-настоящему.</p>
+      </section>
+
+      <section class="question-area" aria-label="Генератор вопросов">
+        <div class="category-row">
+          <p class="section-label">Выберите настроение</p>
+          <div class="categories" role="group" aria-label="Категории вопросов">
+            <button class="category-button is-active" type="button" data-category="Все" aria-pressed="true">Все</button>
+            <button class="category-button" type="button" data-category="Лёгкие" aria-pressed="false">Лёгкие</button>
+            <button class="category-button" type="button" data-category="Глубокие" aria-pressed="false">Глубокие</button>
+            <button class="category-button" type="button" data-category="Для знакомства" aria-pressed="false">Для знакомства</button>
+          </div>
+        </div>
+
+        <article class="question-card" id="question-card" aria-live="polite" aria-atomic="true">
+          <div class="card-topline">
+            <span class="card-index" id="question-category">ВАШ ВОПРОС</span>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </div>
+          <p class="question-text" id="question-text">Какой разговор тебе хотелось бы однажды продолжить?</p>
+          <div class="card-bottomline">
+            <span class="card-hint"><span class="hint-dot" aria-hidden="true"></span> Отвечайте в своём темпе</span>
+            <span class="question-number" id="question-number">01</span>
+          </div>
+        </article>
+
+        <div class="action-row">
+          <button class="next-button" id="next-question" type="button">
+            <span>Следующий вопрос</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+          <p class="counter" aria-live="polite">Задано вопросов <span id="question-count">0</span></p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>Любопытство — это тоже забота.</span>
+        <span class="footer-mark" aria-hidden="true">✳</span>
+      </footer>
+    </main>
+  </body>
+</html>
